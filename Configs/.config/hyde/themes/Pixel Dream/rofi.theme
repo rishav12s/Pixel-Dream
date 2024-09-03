@@ -8,4 +8,5 @@ $HOME/.config/rofi/theme.rasi
     select-fg:          #282828ff;
     separatorcolor:     #504945ff;
     border-color:       #665c54ff;
+    font: "Monocraft Nerd Font 10";
 }
