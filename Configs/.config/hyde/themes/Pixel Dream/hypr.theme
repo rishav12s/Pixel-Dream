@@ -1,11 +1,13 @@
 $HOME/.config/hypr/themes/theme.conf|> $HOME/.config/hypr/themes/colors.conf
 
+$FONT=Monocraft Nerd Font Book
+
 exec = gsettings set org.gnome.desktop.interface icon-theme 'pixel-dream'
 exec = gsettings set org.gnome.desktop.interface gtk-theme 'Pixel-Dream'
 exec = gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
-exec = gsettings set org.gnome.desktop.interface font-name 'Monocraft Nerd Font Book'
+exec = gsettings set org.gnome.desktop.interface font-name '$FONT'
 exec = Hyde cursor theme 'pixel-dream-cursor' size 20
-exec = Hyde code theme 'Catppuccin Mocha'
+
 
 general {
     gaps_in = 3
