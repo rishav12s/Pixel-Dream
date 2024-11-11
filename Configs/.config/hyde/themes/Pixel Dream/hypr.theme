@@ -1,12 +1,17 @@
 $HOME/.config/hypr/themes/theme.conf|> $HOME/.config/hypr/themes/colors.conf
 
+$GTK_THEME=Pixel-Dream
+$ICON_THEME=pixel-dream
+$COLOR_SCHEME=prefer-dark
+$CURSOR_THEME=pixel-dream-cursor
+$CURSOR_SIZE=20                            
 $FONT=Monocraft Nerd Font Book
 
-exec = gsettings set org.gnome.desktop.interface icon-theme 'pixel-dream'
-exec = gsettings set org.gnome.desktop.interface gtk-theme 'Pixel-Dream'
-exec = gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+exec = gsettings set org.gnome.desktop.interface icon-theme '$ICON_THEME'
+exec = gsettings set org.gnome.desktop.interface gtk-theme '$GTK_THEME'
+exec = gsettings set org.gnome.desktop.interface color-scheme '$COLOR_SCHEME'
 exec = gsettings set org.gnome.desktop.interface font-name '$FONT'
-exec = Hyde cursor theme 'pixel-dream-cursor' size 20
+exec = Hyde cursor theme '$CURSOR_THEME' size $CURSOR_SIZE
 
 
 general {
